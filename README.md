@@ -1,5 +1,5 @@
 # profile-copilot-poc
-This is a proof of concept. It's chat bot that helps recruiters to right questions on profile. 
+This is a proof of concept. It's chat bot that helps recruiters to right questions on profile. Check the [blog post](https://medium.com/@adisesha/leveraging-chatgpt-and-langchain-to-enhance-recruitment-a-poc-b97ce2d01e82) for more details.
 
 ## How to run
 1. Set `OPENAI_API_KEY` environment variable.You can get it from https://platform.openai.com/account/api-keys.
