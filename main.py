@@ -61,8 +61,9 @@ def main():
                     break
             else:
                 # Get the chatbot's answer and print it
-                answer = chat_bot.answer(user_input)
-                console.print(Text(f"Answer: {answer}", style=answer_style))
+                with Live(Spinner("dots"), auto_refresh=True):
+                    answer = chat_bot.answer(user_input)
+                    console.print(Text(f"Answer: {answer}", style=answer_style))
 
 if __name__ == "__main__":
     main()
