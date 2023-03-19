@@ -1,0 +1,14 @@
+name: recruiter-app
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python>=3.10
+  - pip>=21.3.1
+  - pip:
+      - rich==13.3.2
+      - langchain==0.0.115
+      - openai==0.27.2
+      - unstructured==0.5.4
+      - pdfminer.six==20221105
+
