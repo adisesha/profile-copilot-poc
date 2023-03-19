@@ -7,6 +7,7 @@ from langchain.prompts.chat import ChatPromptTemplate,  HumanMessagePromptTempla
 class Chatbot:
     def __init__(self, model_name='gpt-3.5-turbo', temperature=1, verbose=False):
         llm = ChatOpenAI(model_name=model_name, temperature=temperature, verbose=verbose)
+        # initial message or instruction given to the model to set the context, role, or goal for the conversation
         system_message = SystemMessage(content='You are a chatbot helping a recruiter to evaluate job applications and question the candidates.')
         human_message_prompt = HumanMessagePromptTemplate.from_template('{human_input}: {resume_data}')
         self.chat_prompt = ChatPromptTemplate.from_messages([system_message, human_message_prompt])
